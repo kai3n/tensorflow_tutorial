@@ -1,9 +1,10 @@
 import tensorflow as tf
 
+# training data
 x_data = [1,2,3]
 y_data = [1,2,3]
 
-w = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
+w = tf.Variable(tf.random_uniform([1], -1.0, 1.0))  # init random value
 b = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
 
 x = tf.placeholder(tf.float32)
